@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="files/jemdoc.css" type="text/css" />
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="lib/jquery-1.8.2.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.3"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.2" media="screen" />
+
+<!-- javascript function-->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.fancybox').fancybox();
+    $(".fancybox-effects-c").fancybox({
+      wrapCSS    : 'fancybox-custom',
+      closeClick : true,
+      openEffect : 'none',
+      helpers : {
+        title : {
+          type : 'inside'
+        },
+        overlay : {
+          css : {
+            'background' : 'rgba(238,238,238,0.85)'
+          }
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript">
+  function display(id){  
+      var traget=document.getElementById(id);  
+      if(traget.style.display=="none"){  
+          traget.style.display="";  
+      }else{  
+          traget.style.display="none";  
+    }  
+ }  
+</script>
+
+<title>Xiaoming Li</title>
+
+</head>
+<body>
+
+<!-- Project
+<div class="menu"> <a href="#home">Home</a> 
+<a href="#publications">Publications</a> 
+<a href="#services">Services</a> 
+<a href="#awards">Awards</a>  
+</div>
+ -->
+ 
+<a id="home" class="anchor"></a>
+<div id="container"> 
+<div class="container"> 
+<!--
+<div id="toptitle">
+<h1>Kai Zhang</h1>
+</div>
+ -->
+
+
+<table class="imgtable">
+  <tr>
+    <td rowspan="5">
+        <a href="#"><img src="./files/photo.jpg" alt="" height="200px" /></a>&nbsp;
+    </td>
+    <td align="left">
+      <lxmh1>Xiaoming Li (李晓明)</lxmh1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="lxmp">Ph.D Candidate</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="lxmp">Visual Perception Center, <a href="http://en.hit.edu.cn/" target="_blank">Harbin Institute of Technology, China</a></p>
+        &&
+      <p class="lxmp">Visual Computing Lab, <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University, Hong Kong</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="lxmp">Email: <a href="mailto:csxmli@hit.edu.cn">csxmli [at] hit.edu.cn</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <lxmp><a href="https://scholar.google.com/citations?hl=zh-CN&user=tmT_voUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><img src="./files/google.png" height="30px"  alt="Google Scholar"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/csxmli2016" target="_blank"><img src="./files/github.png" height="30px" alt="Github"></a></lxmp>
+    </td>
+  </tr>
+</table>
+
+<h2>Biography</h2>
+<p class="info"> I am currently a Ph.D student at <B>V</B>isual <B>P</B>erception <B>C</B>enter, Harbin Institute of Technology, China, supervised by <a href="https://scholar.google.com/citations?hl=zh-CN&user=rUOpCEYAAAAJ&view_op=list_works" target="_blank">Prof. Wangmeng Zuo</a>, 
+  and also with the <B>V</B>isual <B>C</B>omputing <B>L</B>ab, the Hong Kong Polytechnic University, Hong Kong, jointly supervised by <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Prof. Lei Zhang</a>. 
+  Before that, I received my M.Eng. and B.Eng degrees from the School of Computer Science and Technology, Harbin Institute of Technology, China.
+  I have been a research intern in <a href="https://damo.alibaba.com/?lang=en">Alibaba DAMO Academy</a> since Nov. 2019.
+  </p>
+
+
+<h2>Research Interest</h2>
+<p class="info">My interests are in the field of computer vision, especially on the image editing and restoration.
+Currently, I mainly focus on solving <B>the real-world low-quality image restoration </B>problems. Besides, I am also interested in the following research topics:</p>
+<ul>
+<li>Image Restoration</li>
+<li>Image to Image Translation</li>
+<li>Generative Adverserial Networks (GANs)</li>
+<li>Image Inpainting and Completion</li>
+<li>Face Related Tasks</li>
+</ul>
+
+<!-- News -->
+
+  <h2>News</h2>
+  <!-- <div style="height: 150px; overflow: auto;"> -->
+  <div>
+      <ul>
+          <li><p>2020-09-08: Our DFDNet is incorporated into <a href="https://github.com/xinntao/BasicSR">BasicSR (an open source image and video super-resolution toolbox)</a>.</p></li>
+          <li><p>2020-08-15: Our DFDNet is shared by <a href="https://www.youtube.com/channel/UCgfe2ooZD3VJPB6aJAnuQng">bycloud</a> on <a href="https://www.youtube.com/watch?v=oQQ0M8km47k">Youtube Video</a>.</p></li>
+      </ul>
+  </div>
+
+
+
+<!-- Project -->
+<a id="publications" class="anchor"></a>
+<h2>Selected Publications <span class="thumb">(Click the thumbnail to see the details)</span></h2>
+<!-- DFDNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/DFDNet.png" title="Overview of our DFDNet. We first adopt K-means to generate K clusters for each component (i.e., left/right eyes, nose and mouth) on different feature scales. And then, the restoration process and dictionary feature transfer (DFT) block that are utilized to provide the reference details in a progressive manner.">
+        <img class="proj_thumb" src="./files/DFDNet_small.png" alt="DFDNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp">Blind Face Restoration via Deep Multi-scale Component Dictionaries (DFDNet)</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li</B>, Chaofeng Chen, Shangchen Zhou, Xianhui Lin, Wangmeng Zuo and Lei Zhang</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">European Conference on Computer Vision (<B>ECCV</B>), 2020.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540375.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/DFDNet" target="_blank">Code</a>] 
+      [<a  onclick="display('dfdnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="dfdnet" style="display: none;">
+@InProceedings{li2020dfdnet,
+  author={Li, Xiaoming  and Chen, Chaofeng and Zhou, Shangchen and Lin, Xianhui and Zuo, Wangmeng and Zhang, Lei},
+  title={Blind Face Restoration via Deep Multi-scale Component Dictionaries},
+  booktitle={ECCV},
+  year = {2020}
+}</pre>
+</div>
+
+<!-- 3D prior -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/3dprior.png" title="Overview of the proposed face super-resolution architecture. Our model consists of two branches: 
+      the top block is a ResNet-50 Network to extract the 3D facial coefficients and restore a sharp face rendered structure. The bottom block is dedicated to face super-resolution guided by the facial coefficients and rendered sharp face structures
+      which are concatenated by the Spatial Feature Transform (SFT) layer.">
+      <img class="proj_thumb" src="./files/3dprior_small.png" alt=""/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp">Face Super-Resolution Guided by 3D Facial Priors </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author">Xiaobin Hu, Wenqi Ren, John LaMaster, Xiaochun Cao, <B>Xiaoming Li</B>, Zechao Li, Bjoern Menze, and Wei Liu</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">European Conference on Computer Vision (<B>ECCV</B>), 2020 (Spotlight).</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490732.pdf" target="_blank">Paper</a>] 
+      [<a  onclick="display('3dprior')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="3dprior" style="display: none;">
+@InProceedings{hu20203dprior,
+  author={Hu, Xiaobin  and  Ren, Wenqi  and  Lamaster, John  and  Cao, Xiaochun  and  Li, Xiaoming  and  Li, Zechao  and  Menze, Bjoern  and  Liu, Wei},
+  title={Face Super-Resolution Guided by 3D Facial Priors},
+  booktitle={ECCV},
+  year = {2020}
+}</pre>
+</div>
+
+
+<!-- ASFFNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/ASFFNet.gif" title="Overview of our ASFFNet. WLS is adopted to select the optimal guidance from multiple exemplars, MLS and AdaIN are leveraged for spatial alignment and illumination of guidance image in the feature space, and ASFF layers are introduced to incorporate guidance features in an adaptive and progressive manner.">
+        <img class="proj_thumb" src="./files/ASFFNet_small.png" alt="ASFFNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp">Enhanced Blind Face Restoration With Multi-Exemplar Images and Adaptive Spatial Feature Fusion (ASFFNet)</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li</B>, Wenyu Li, Dongwei Ren, Hongzhi Zhang, Meng Wang and Wangmeng Zuo</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE International Conference on Computer Vision and Pattern Recognition (<B>CVPR</B>), 2020 (Oral).</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Enhanced_Blind_Face_Restoration_With_Multi-Exemplar_Images_and_Adaptive_Spatial_CVPR_2020_paper.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/ASFFNet" target="_blank">Code</a>] 
+      [<a onclick="display('asffnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="asffnet" style="display: none;">
+@InProceedings{li2020asffnet,
+  author={Li, Xiaoming and Li, Wenyu and Ren, Dongwei and Zhang, Hongzhi and Wang, Meng and Zuo, Wangmeng},
+  title={Enhanced Blind Face Restoration With Multi-Exemplar Images and Adaptive Spatial Feature Fusion},
+  booktitle={CVPR},
+  year = {2020}
+}</pre>
+</div>
+
+
+<!-- SymmFCNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/symmfcnet.png" title="Overview of our SymmFCNet. Red, green and blue lines in (a) represent the three types of pixel-wise correspondence between the input and the flip image. Red: missing pixels (input) to non-occluded pixels (flip);  Green: missing pixels (input) to  missing pixels (flip); Blue: remaining pixels (input) to remaining pixels (flip). In Stage I, the missing pixels in one-half face (red lines) are filled by reweighting the illumination of their symmetrical pixels in the other half-face. In Stage II, the missing pixels in both-half faces (green lines in (a)) are filled by the generative reconstruction subnet with the incorporation of perceptual symmetry loss for symmetry-consistent completion.">
+        <img class="proj_thumb" src="./files/symmfcnet_small.png" alt="SymmFCNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp">Learning Symmetry Consistent Deep CNNs for Face Completion</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li*</B>, Guoshegn Hu*, Jieru Zhu, Wangmeng Zuo, Meng Wang and Lei Zhang</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE Transactions on Image Processing (<B>TIP</B>), 2020.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "http://www4.comp.polyu.edu.hk/~cslzhang/paper/SymmFCNet_VR_Final.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/SymmFCNet" target="_blank">Code</a>] 
+      [<a onclick="display('symmfcnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="symmfcnet" style="display: none;">
+@article{li2020symmfcnet,
+  author={Li, Xiaoming and Hu, Guosheng and Zhu, Jieru and Zuo, Wangmeng and Wang, Meng and Zhang, Lei},
+  title={Learning Symmetry Consistent Deep CNNs for Face Completion},
+  journal={IEEE Transactions on Image Processing},
+  year={2020},
+  volume={29},
+  number={},
+  pages={7641-7655},
+}</pre>
+</div>
+
+
+<!-- GFRNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/gfrnet.jpg" title="Overview of our GFRNet. The WarpNet takes the degraded observation I^d and guided image I^g as input to predict the dense flow field Φ, which is adopted to
+      deform I^g to the warped guidance I^w. I^w is expected to be spatially well aligned with the ground-truth I. Thus the RecNet takes I^w and I^d as input to produce the restoration result.">
+        <img class="proj_thumb" src="./files/gfrnet_small.jpg" alt="GFRNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp">Learning Warped Guidance for Blind Face Restoration (GFRNet)</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li</B>, Ming Liu, Yuting Ye, Wangmeng Zuo, Liang Lin and Ruigang Yang</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">European Conference on Computer Vision (<B>ECCV</B>), 2018.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://arxiv.org/pdf/1804.04829.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/GFRNet" target="_blank">Code</a>] 
+      [<a onclick="display('gfrnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="gfrnet" style="display: none;">
+@InProceedings{li2018gfrnet,
+  author={Li, Xiaoming and Liu, Ming and Ye, Yuting and Zuo, Wangmeng and Lin, Liang and Yang, Ruigang},
+  title={Learning Warped Guidance for Blind Face Restoration},
+  booktitle={ECCV},
+  year = {2020}
+}</pre>
+</div>
+
+<!-- ShiftNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/shiftnet.png" title="Overview of our Shift Layer.  The encoder feature of the known region is shifted to serve as an estimation of the missing parts.">
+        <img class="proj_thumb" src="./files/shiftnet_small.png" alt="ShiftNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp">Shift-Net: Image Inpainting via Deep Feature Rearrangement (ShiftNet)</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author">Zhaoyi Yan, <B>Xiaoming Li</B>, Mu Li, Wangmeng Zuo and Shiguang Shan</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">European Conference on Computer Vision (<B>ECCV</B>), 2018.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://arxiv.org/pdf/1801.09392.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/Zhaoyi-Yan/Shift-Net_pytorch" target="_blank">Code</a>] 
+      [<a onclick="display('shiftnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="shiftnet" style="display: none;">
+@InProceedings{yan2018shiftnet,
+  author={Yan, Zhaoyi and Li, Xiaoming and Li, Mu and Zuo, Wangmeng and Shan, Shiguang},
+  title={Shift-Net: Image Inpainting via Deep Feature Rearrangement},
+  booktitle={ECCV},
+  year = {2020}
+}</pre>
+</div>
+
+<!-- IPFCNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/ipfcnet.png" title="Overview of our network.We take the reference image from the same identity with the occluded input and its corresponding pose details to regularize the searching space of generator.">
+        <img class="proj_thumb" src="./files/ipfcnet_small.png" alt=""/>&nbsp;
+    </td>
+    <td>
+      <p class="pub_title lxmp">Identity Preserving Face Completion for Large Ocular Region Occlusion</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author">Yajie Zhao, Weikai Chen, Jun Xing, <B>Xiaoming Li</B>, Zach Bessinger, Fuchang Liu, Wangmeng Zuo, Ruigang Yang</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">The British Machine Vision Conference (<B>BMVC</B>), 2018.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://arxiv.org/pdf/1807.08772.pdf" target="_blank">Paper</a>] 
+      [<a onclick="display('ipfcnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+  <pre id="ipfcnet" style="display: none;">
+@InProceedings{zhao2018identity,
+  author={Zhao, Yajie and Chen, Weikai and Xing, Jun and Li, Xiaoming and Bessinger, Zach and Liu, Fuchang and Zuo, Wangmeng and Yang, Ruigang},
+  title={Identity Preserving Face Completion for Large Ocular Region Occlusion},
+  booktitle={BMVC},
+  year = {2018}
+}</pre>
+</div>
+
+
+<!-- Services -->
+<a id="services" class="anchor"></a>
+<h2>Academic Services</h2>
+
+<p><B>Journal Reviewer:  </B></p>
+<font size="2"> 
+<ul>
+<li>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</li>
+<li>IEEE Transactions on Image Processing (TIP)</li>
+<li>Computer Vision and Image Understanding (CVIU)</li>
+</ul>
+</font>
+<br />
+<p><B>Conference Reviewer: </B></p>
+<font size="2"> 
+<ul>
+<li>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</li>
+<li>International Joint Conferences on Artificial Intelligence (IJCAI)</li>
+<li>Asian Conference on Computer Vision (ACCV)</li>
+</ul>
+</font>
+
+<!-- Teaching -->
+<a id="Teaching" class="achor"></a>
+<h2>Teaching</h2>
+<font size="2"> 
+<ul>
+<li>Polyu COMP1003: STATISTICAL TOOLS AND APPLICATIONS, Teaching Assistant, 2019</li>
+<li>Polyu COMP3122: INFORMATION SYSTEMS DEVELOPMENT, Teaching Assistant, 2019</li>
+<li>Polyu COMP6706: ADVANCED TOPICS IN VISUAL COMPUTING, Teaching Assistant, 2020</li>
+</ul>
+</font>
+<!-- Links -->
+<!-- <div id="footer">
+<div id="footer-text">
+Last updated at 2020-09-11 by Xiaoming Li.
+</div>
+</div> -->
+<a href="https://clustrmaps.com/site/1bd1m" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=QOUn4w5djX3sOmVRx_qPmV2YK0mxkbPUBhLlp8-cTH4&cl=ffffff" style="display: none;"></a>
+</body>
+</html>
