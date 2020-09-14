@@ -252,6 +252,11 @@ p.lxmp {
 	margin-top: 3px;
 }
 
+p.lxmp_pub {
+	margin-bottom: 1px;
+	margin-top: 2px;
+}
+
 p.info {
 	text-align: justify;
 	line-height: 1.4;
@@ -496,6 +501,7 @@ img {
 
 table.imgtable, table.imgtable td {
 	/*border: 1px solid #CCC;*/
+	margin-top: 6px;
 	border: none;
     text-align: left;
 }
