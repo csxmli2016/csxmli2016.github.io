@@ -115,7 +115,8 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 <ul>
 <li>Image Restoration</li>
 <li>Image to Image Translation</li>
-<li>Generative Adverserial Networks (GANs)</li>
+<li>Memory Network</li>
+<li>GAN Priors</li>
 <li>Image Inpainting and Completion</li>
 <li>Face Related Tasks</li>
 </ul>
@@ -126,8 +127,9 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
   <!-- <div style="height: 150px; overflow: auto;"> -->
   <div>
       <ul>
-          <li><p>2020-09-08: Our DFDNet is incorporated into <a href="https://github.com/xinntao/BasicSR" target="_blank">BasicSR (an open source image and video super-resolution toolbox)</a>.</p></li>
-          <li><p>2020-08-15: Our DFDNet is shared by <a href="https://www.youtube.com/channel/UCgfe2ooZD3VJPB6aJAnuQng" target="_blank">bycloud</a> on <a href="https://www.youtube.com/watch?v=oQQ0M8km47k" target="_blank">Youtube Video</a>.</p></li>
+          <li><p>Two papers are accepted in CVPR 2021.</p></li>
+          <li><p>Our DFDNet is incorporated into <a href="https://github.com/xinntao/BasicSR" target="_blank">BasicSR (an open source image and video super-resolution toolbox)</a>.</p></li>
+          <li><p>Our DFDNet is shared by <a href="https://www.youtube.com/channel/UCgfe2ooZD3VJPB6aJAnuQng" target="_blank">bycloud</a> on <a href="https://www.youtube.com/watch?v=oQQ0M8km47k" target="_blank">Youtube Video</a>.</p></li>
       </ul>
   </div>
 
@@ -136,6 +138,89 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 <!-- Project -->
 <a id="publications" class="anchor"></a>
 <h2>Selected Publications <span class="thumb">(Click the thumbnail to see the details)</span></h2>
+
+<!-- SPGNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/SPGNet.png" title="Overview of our proposed method. It mainly contains two stages. In the first one, SPATN is adopted to generate the target parsing map. In the second one, feature deformation is utilized to warp the source appearance feature to the target pose, and SPGBlock is progressively introduced to incorporate the semantic region adaptive normalization on the generation of the target result.">
+        <img class="proj_thumb" src="./files/SPGNet_small.png" alt="SPGNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp_pub">Learning Semantic Person Image Generation by Region-Adaptive Normalization</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author">Zhengyao Lv, <B>Xiaoming Li</B>, Xin Li, Fu Li, Tianwei Lin, Dongliang He, and Wangmeng Zuo</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE International Conference on Computer Vision and Pattern Recognition (<B>CVPR</B>), 2021.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "#" target="_blank">Paper</a>] 
+      [<a href="https://github.com/cszy98/SPGNet" target="_blank">Code</a>] 
+      [<a  onclick="display('spgnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+<pre id="spgnet" style="display: none;">
+@InProceedings{lv2021spgnet,
+  author = {Lv, Zhengyao and Li, Xiaoming and Li, Xin and Li, Fu and Lin, Tianwei and He, Dongliang and Zuo, Wangmeng},
+  title = {Learning Semantic Person Image Generation by Region-Adaptive Normalization},
+  booktitle = {CVPR},
+  year = {2021}
+}</pre>
+</div>
+
+
+<!-- PSFRGAN -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/PSFRGAN.png" title="Visulization of the proposed progressive semantic-aware style transformation network for face restoration.">
+        <img class="proj_thumb" src="./files/PSFRGAN_small.png" alt="PSFRGAN"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp_pub">Progressive Semantic-Aware Style Transformation for Blind Face Restoration</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author">Chaofeng Chen, <B>Xiaoming Li</B>, Lingbo Yang, Xianhui Lin, Lei Zhang and Kwan-Yee K. Wong</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE International Conference on Computer Vision and Pattern Recognition (<B>CVPR</B>), 2021.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "#" target="_blank">Paper</a>] 
+      [<a href="https://github.com/chaofengc/PSFRGAN" target="_blank">Code</a>] 
+      [<a  onclick="display('psfrgan')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+<pre id="psfrgan" style="display: none;">
+@InProceedings{ChenPSFRGAN,
+  author = {Chen, Chaofeng and Li, Xiaoming and Yang, Lingbo and Lin, Xianhui and Zhang, Lei and Wong, KKY},
+  title = {Progressive Semantic-Aware Style Transformation for Blind Face Restoration},
+  booktitle = {CVPR},
+  year = {2021}
+}</pre>
+</div>
+
+
 <!-- DFDNet -->
 <table class="imgtable">
   <tr>
