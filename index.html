@@ -95,7 +95,9 @@
   </tr>
   <tr>
     <td>
-      <lxmp><a href="https://scholar.google.com/citations?hl=zh-CN&user=tmT_voUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><img src="./files/google.png" height="30px"  alt="Google Scholar"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/csxmli2016" target="_blank"><img src="./files/github.png" height="30px" alt="Github"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./files/cv.pdf" target="_blank"><img src="./files/cv6.png" height="30px" alt="Curriculum Vitae"></a></lxmp>
+      <lxmp><a href="https://scholar.google.com/citations?hl=zh-CN&user=tmT_voUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><img src="./files/google.png" height="30px"  alt="Google Scholar"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/csxmli2016" target="_blank"><img src="./files/github.png" height="30px" alt="Github"></a>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./files/cv.pdf" target="_blank"><img src="./files/cv6.png" height="30px" alt="Curriculum Vitae"></a>-->
+      </lxmp>
     </td>
   </tr>
 </table>
@@ -103,7 +105,7 @@
 <h2>Biography</h2>
 <p class="info"> I am currently a research fellow at <a href="https://www.mmlab-ntu.com/" target="_blank">MMLab@NTU</a>, Nanyang Technological University, Singapore, working with Prof. <a href="https://www.mmlab-ntu.com/person/ccloy/" target="_blank">Chen Change Loy</a>.
   <!--and also with the <B>V</B>isual <B>C</B>omputing <B>L</B>ab, the Hong Kong Polytechnic University, Hong Kong, jointly supervised by <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Prof. Lei Zhang</a>. -->
-  Before that, I received my M.Eng., B.Eng, Ph.D degrees from the Faculty of Computing, Harbin Institute of Technology, China, under the supervision of Prof. <a href="https://scholar.google.com/citations?hl=zh-CN&user=rUOpCEYAAAAJ&view_op=list_works" target="_blank">Wangmeng Zuo</a> and Prof. <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Lei Zhang</a>.
+  Before that, I received my joint Ph.D degrees from Harbin Institute of Technology in 2021 and The Hong Kong Polytechnic University in 2022, under the supervision of Prof. <a href="https://scholar.google.com/citations?hl=zh-CN&user=rUOpCEYAAAAJ&view_op=list_works" target="_blank">Wangmeng Zuo</a> and Prof. <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Lei Zhang</a>.
   I was a research intern in <a href="https://damo.alibaba.com/?lang=en" target="_blank">Alibaba DAMO Academy</a> from Nov. 2019 to Nov. 2021.
   </p>
 
@@ -113,7 +115,6 @@
 Currently, I mainly focus on solving <B>the real-world low-quality image restoration </B>problems. Besides, I am also interested in the following research topics:</p>
 <ul>
 <li>Image Restoration and Editing</li>
-<li>Memory Network</li>
 <li>GAN Priors</li>
 <li>Image Inpainting and Completion</li>
 <li>Face Related Tasks</li>
@@ -122,6 +123,89 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 <!-- Project -->
 <a id="publications" class="anchor"></a>
 <h2>Selected Publications <span class="thumb">(Click the thumbnail to see the details)</span></h2>
+
+
+
+<!-- DMDNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/DMDNet.png" title="Overview of our proposed DMDNet. For each component feature that is obtained through RoIAlign operation, the generic dictionary is conducted from the HQ images with different identities, while the specific one is generated from the HQ references with the same identity. Confidence score is finally adopted to handle the input with different degradation levels.">
+        <img class="proj_thumb" src="./files/DMDNet_small.png" alt="DMDNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp_pub">Learning Dual Memory Dictionaries for Blind Face Restoration</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li</B>, Shiguang Zhang, Shangchen Zhou, Lei Zhang and Wangmeng Zuo</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE Transactions on Pattern Analysis and Machine Intelligence (<B>TPAMI</B>), 2022.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://arxiv.org/abs/2210.08160" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/DMDNet" target="_blank">Code & Dataset</a>] 
+      [<a  onclick="display('dmdnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+<pre id="dmdnet" style="display: none;">
+@article{li2022learning,
+  title={Learning Dual Memory Dictionaries for Blind Face Restoration},
+  author={Li, Xiaoming and Zhang, Shiguang and Zhou, Shangchen and Zhang, Lei and Zuo, Wangmeng},
+  booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year = {2022}
+}</pre>
+</div>
+
+
+<!-- ReDegNet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/ReDegNet.png" title="Overview of our proposed ReDegNet. (a) The DegNet for learning the degradation representation. (b) The SynNet for synthesizing the LQ image with the degradation presentation from DegNet. (c) The HQ natural image together with the degradation representation sampled from the real degradation pool are taken into SynNet to generate their synthetic LQ one.">
+        <img class="proj_thumb" src="./files/ReDegNet_small.png" alt="ReDegNet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp_pub">From Face to Natural Image: Learning Real Degradation for Blind Image Super-Resolution</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li</B>, Chaofeng Chen, Xianhui Lin, Wangmeng Zuo, and Lei Zhang</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">European Conference on Computer Vision (<B>ECCV</B>), 2022.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://arxiv.org/pdf/2210.00752.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/ReDegNet" target="_blank">Code</a>] 
+      [<a  onclick="display('redegnet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+<pre id="redegnet" style="display: none;">
+@article{li2022from,
+  title={From Face to Natural Image: Learning Real Degradation for Blind Image Super-Resolution},
+  author={Li, Xiaoming and Chen, Chaofeng and Lin, Xianhui and Zuo, Wangmeng and Zhang, Lei},
+  booktitle = {ECCV},
+  year = {2022}
+}</pre>
+</div>
 
 
 <!-- SAFM -->
@@ -137,7 +221,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
   </tr>
   <tr>
     <td>
-      <p class="pub_author">Zhengyao Lv, <B>Xiaoming Li</B>, Zhenxing Niu, Bing Cao, Wangmeng Zuo</p>
+      <p class="pub_author">Zhengyao Lv, <B>Xiaoming Li</B>, Zhenxing Niu, Bing Cao, and Wangmeng Zuo</p>
     </td>
   </tr>
   <tr>
@@ -255,7 +339,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
         <img class="proj_thumb" src="./files/DFDNet_small.png" alt="DFDNet"/>&nbsp;</a>
     </td>
     <td>
-      <p class="pub_title lxmp_pub">Blind Face Restoration via Deep Multi-scale Component Dictionaries (DFDNet)</p>
+      <p class="pub_title lxmp_pub">Blind Face Restoration via Deep Multi-scale Component Dictionaries</p>
     </td>
   </tr>
   <tr>
@@ -288,6 +372,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 </div>
 
 <!-- 3D prior -->
+<!--
 <table class="imgtable">
   <tr>
     <td rowspan="4" class="pub_table">
@@ -327,7 +412,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
   year = {2020}
 }</pre>
 </div>
-
+-->
 
 <!-- ASFFNet -->
 <table class="imgtable">
@@ -337,7 +422,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
         <img class="proj_thumb" src="./files/ASFFNet_small.png" alt="ASFFNet"/>&nbsp;</a>
     </td>
     <td>
-      <p class="pub_title lxmp_pub">Enhanced Blind Face Restoration With Multi-Exemplar Images and Adaptive Spatial Feature Fusion (ASFFNet)</p>
+      <p class="pub_title lxmp_pub">Enhanced Blind Face Restoration With Multi-Exemplar Images and Adaptive Spatial Feature Fusion</p>
     </td>
   </tr>
   <tr>
@@ -383,7 +468,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
   </tr>
   <tr>
     <td>
-      <p class="pub_author"><B>Xiaoming Li*</B>, Guoshegn Hu*, Jieru Zhu, Wangmeng Zuo, Meng Wang and Lei Zhang</p>
+      <p class="pub_author"><B>Xiaoming Li</B>, Guosheng Hu, Jieru Zhu, Wangmeng Zuo, Meng Wang and Lei Zhang</p>
     </td>
   </tr>
   <tr>
@@ -423,7 +508,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
         <img class="proj_thumb" src="./files/gfrnet_small.jpg" alt="GFRNet"/>&nbsp;</a>
     </td>
     <td>
-      <p class="pub_title lxmp_pub">Learning Warped Guidance for Blind Face Restoration (GFRNet)</p>
+      <p class="pub_title lxmp_pub">Learning Warped Guidance for Blind Face Restoration</p>
     </td>
   </tr>
   <tr>
@@ -463,7 +548,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
         <img class="proj_thumb" src="./files/shiftnet_small.png" alt="ShiftNet"/>&nbsp;</a>
     </td>
     <td>
-      <p class="pub_title lxmp_pub">Shift-Net: Image Inpainting via Deep Feature Rearrangement (ShiftNet)</p>
+      <p class="pub_title lxmp_pub">Shift-Net: Image Inpainting via Deep Feature Rearrangement</p>
     </td>
   </tr>
   <tr>
@@ -496,6 +581,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 </div>
 
 <!-- IPFCNet -->
+<!--
 <table class="imgtable">
   <tr>
     <td rowspan="4" class="pub_table">
@@ -533,7 +619,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
   year = {2018}
 }</pre>
 </div>
-
+-->
 
 <!-- Services -->
 <a id="services" class="anchor"></a>
