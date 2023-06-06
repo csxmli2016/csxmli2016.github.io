@@ -120,10 +120,101 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 <li>Face Related Tasks</li>
 </ul>
 
+<h2>News</h2>
+<ul>
+  <li>⭐ Use <code style="color: black;background-color: yellow;">pip install textbsr</code> to try <a href="https://github.com/csxmli2016/textbsr" target="_blank">our Simple Blind Text Image Super-Resolution framework.</a></li>
+  <a href="https://imgsli.com/MTg0MTg1" target="_blank"> <img alt="Our TextBSR Result" src="./files/2023/textbsr_i.png" height="120px" onMouseOver="this.src='./files/2023/textbsr_o.png'" onMouseOut="this.src='./files/2023/textbsr_i.png'"></a>
+</ul>
+
+
+
 <!-- Project -->
 <a id="publications" class="anchor"></a>
 <h2>Selected Publications <span class="thumb">(Click the thumbnail to see the details)</span></h2>
 
+
+
+
+
+<!-- MARCONet -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/2023/marconet.png" title="Overview of our MARCONet. It contains three parts, i.e., (i) Transformer encoder for predicting the font style, classification and bounding boxes of each character from LR input, (ii) structure prior generation with pre-trained StyleGAN for generating reliable structure prior for each character, and (iii) the SR process for reconstructing the SR output with the incorporation of each characters' structure prior.">
+        <img class="proj_thumb" src="./files/2023/marconet_small.png" alt="MARCONet"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp_pub">Learning Generative Structure Prior for Blind Text Image Super-resolution</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author"><B>Xiaoming Li</B>, Wangmeng Zuo, and Chen Change Loy</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE International Conference on Computer Vision and Pattern Recognition (<B>CVPR</B>), 2023.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://arxiv.org/pdf/2303.14726.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/csxmli2016/MARCONet" target="_blank">Code</a>] 
+      [<a  onclick="display('marconet')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+<pre id="marconet" style="display: none;">
+@article{li2023marconet,
+  title={Learning Generative Structure Prior for Blind Text Image Super-resolution},
+  author={Li, Xiaoming and Zuo, Wangmeng and Loy, Chen Change},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year = {2023}
+}</pre>
+</div>
+
+<!-- NUWA-Lip -->
+<table class="imgtable">
+  <tr>
+    <td rowspan="4" class="pub_table">
+      <a class="fancybox-effects-c" href="./files/2023/nuwa-lip.png" title="Overview of NÜWA-LIP during inference. The encoder of DF-VQGAN will generate the tokens of the image. Then, tokens corresponding to defective regions will be replaced with tokens predicted by the MP-S2S. The decoder of DF-VQGAN will generate the image based on these tokens.">
+        <img class="proj_thumb" src="./files/2023/nuwa-lip_samll.png" alt="NUWA-Lip"/>&nbsp;</a>
+    </td>
+    <td>
+      <p class="pub_title lxmp_pub">NUWA-LIP: Language-guided Image Inpainting with Defect-free VQGAN</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_author">Minheng Ni, <B>Xiaoming Li</B>, and Wangmeng Zuo</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_conf">IEEE International Conference on Computer Vision and Pattern Recognition (<B>CVPR</B>), 2023.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="pub_link">[<a href= "https://openaccess.thecvf.com/content/CVPR2023/papers/Ni_NUWA-LIP_Language-Guided_Image_Inpainting_With_Defect-Free_VQGAN_CVPR_2023_paper.pdf" target="_blank">Paper</a>] 
+      [<a href="https://github.com/kodenii/NUWA-LIP" target="_blank">Code</a>] 
+      [<a  onclick="display('nuwa-lip')" style="cursor:pointer;">BibTex</a>]
+      </p>
+    </td>
+  </tr>
+</table>
+<div>
+<pre id="nuwa-lip" style="display: none;">
+@article{ni2023nuwa,
+  title={N{\"U}WA-LIP: Language Guided Image Inpainting with Defect-free VQGAN},
+  author={Ni, Minheng and Li, Xiaoming and Zuo, Wangmeng},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year = {2023}
+}</pre>
+</div>
 
 
 <!-- DMDNet -->
@@ -585,7 +676,7 @@ Currently, I mainly focus on solving <B>the real-world low-quality image restora
 <table class="imgtable">
   <tr>
     <td rowspan="4" class="pub_table">
-      <a class="fancybox-effects-c" href="./files/ipfcnet.png" title="Overview of our network.We take the reference image from the same identity with the occluded input and its corresponding pose details to regularize the searching space of generator.">
+      <a class="fancybox-effects-c" href="./files/ipfcnet.png" title="Overview of our network. We take the reference image from the same identity with the occluded input and its corresponding pose details to regularize the searching space of generator.">
         <img class="proj_thumb" src="./files/ipfcnet_small.png" alt=""/>&nbsp;
     </td>
     <td>
