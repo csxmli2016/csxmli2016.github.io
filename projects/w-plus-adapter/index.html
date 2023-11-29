@@ -130,7 +130,7 @@
             </div>
           </div>
         </div>
-        <p>
+        <p style="text-align: justify;">
           Given a single reference image (thumbnail in the top left), our <span class="mathcal">W</span><sub>+</sub> adapter not only integrates the identity into the text-to-image generation accurately but also enables modifications of facial attributes along the &Delta;<span class="mathcal">w</span> trajectory derived from StyleGAN. The text prompt is ``a woman wearing a spacesuit in a forest''.
         </p>
     </div>
@@ -150,7 +150,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
+          <p style="text-align: justify;">
             Text-to-image diffusion models have remarkably excelled in producing diverse, high-quality, and photo-realistic images. This advancement has spurred a growing interest in incorporating specific identities into generated content. Most current methods employ an inversion approach to embed a target visual concept into the text embedding space using a single reference image. However, the newly synthesized faces either closely resemble the reference image in terms of facial attributes, such as expression, or exhibit a reduced capacity for identity preservation. Text descriptions intended to guide the facial attributes of the synthesized face may fall short, owing to the intricate entanglement of identity information with identity-irrelevant facial attributes derived from the reference image. To address these issues, we present the novel use of the extended StyleGAN embedding space <span class="mathcal">W</span><sub>+</sub>, to achieve enhanced identity preservation and disentanglement for diffusion models. By aligning this semantically meaningful human face latent space with text-to-image diffusion models, we succeed in maintaining high fidelity in identity preservation, coupled with the capacity for semantic editing. Additionally, we propose new training objectives to balance the influences of both prompt and identity conditions, ensuring that the identity-irrelevant background remains unaffected during facial attribute modifications. Extensive experiments reveal that our method adeptly generates personalized text-to-image outputs that are not only compatible with prompt descriptions but also amenable to common StyleGAN editing directions in diverse settings.
         </div>
       </div>
@@ -172,7 +172,7 @@
             </div>
           </div>
         </div>
-        <p>
+        <p style="text-align: justify;">
           Our approach is capable of generating images that preserve identity while allowing for semantic edits, requiring just a single reference image for inference. This capability is realized by innovatively aligning StyleGAN's <span class="mathcal">W</span><sub>+</sub> latent space with the diffusion model. The training of our <span class="mathcal">W</span><sub>+</sub> adapter is divided into two stages. In Stage I, we establish a mapping from <span class="mathcal">W</span><sub>+</sub> to SD latent space, using the resulting projection as an additional identity condition to synthesize center-aligned facial images of a specified identity. In Stage II, this personalized generation process is expanded to accommodate more dynamic, "in-the-wild" settings, ensuring adaptability to a variety of textual prompts.
         </p>
     </div>
