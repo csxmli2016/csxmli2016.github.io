@@ -79,7 +79,7 @@ My research interests lie in high-fidelity image restoration (face/text) and con
 
 
 
-# 📝 Select Publications 
+# 📝 Selected Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCV 2026</div><img src='images/AITTI.jpg' alt="sym" width="100%" style="cursor: pointer;" onclick="openModal(this.src)" title="Click to enlarge"></div></div>
 <div class='paper-box-text' markdown="1">
