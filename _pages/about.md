@@ -23,7 +23,7 @@ redirect_from:
 
 <div style="text-align: justify; line-height: 1.6; margin-bottom: 20px;" markdown="1">
 
-I am an incoming Associate Professor with [PRLab](https://prlab-nju.com/nju/) at [the School of Intelligence Science and Technology](https://is.nju.edu.cn/), Nanjing University (Suzhou Campus).
+I am a Tenure-Track Associate Professor with [PRLab](https://prlab-nju.com/nju/) at [the School of Intelligence Science and Technology](https://is.nju.edu.cn/), Nanjing University (Suzhou Campus).
 Currently, I am a research fellow at <a href="https://www.mmlab-ntu.com/" target="_blank">MMLab@NTU</a>, Nanyang Technological University, Singapore, working with Prof. <a href="https://www.mmlab-ntu.com/person/ccloy/" target="_blank">Chen Change Loy</a>.
 I obtained my joint Ph.D degrees from Harbin Institute of Technology and The Hong Kong Polytechnic University, under the supervision of Prof. <a href="https://scholar.google.com/citations?hl=zh-CN&user=rUOpCEYAAAAJ&view_op=list_works" target="_blank">Wangmeng Zuo</a> and Prof. <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Lei Zhang</a>.
 My research interests lie in high-fidelity image restoration (face/text) and controllable image generation.
@@ -48,7 +48,7 @@ My research interests lie in high-fidelity image restoration (face/text) and con
   <div style="line-height: 1.6;" markdown="1">
   **招收对象**
   * **本科生：** 南京大学及其他高校大一至大三学生，需保证至少一年的进组科研时间或者完成一个完整工作，表现优秀者提供科研补助。
-  * **研究生：** 硕士/~~博士~~研究生，欢迎计算机、数学等相关专业背景。
+  * **研究生：** 硕士/博士研究生，欢迎计算机、数学等相关专业背景。
   * **研究人员：** 全职/兼职研究助理 (RA)。
   </div>
   <!--
@@ -370,7 +370,7 @@ Zhaoyi Yan, **<u>Xiaoming Li</u>**, Mu Li, Wangmeng Zuo, Shiguang Shan
 ---
 <p style="text-align: center; color: #888; font-size: 1rem; margin-top: 0.5rem;">
 The website template is adapted from <a href="https://github.com/RayeRen/rayeren.github.io" target="_blank" style="color: #777; text-decoration: underline;">RayeRen</a>.
-Last updated: January 2, 2026
+Last updated: March 1, 2026
 </p>
 
 
