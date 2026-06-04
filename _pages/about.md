@@ -75,7 +75,6 @@ My research interests lie in high-fidelity image restoration (face/text) and con
 <div style="max-height: 16rem; overflow-y: auto; padding-right: 1rem;" markdown="1">
 
 - *2025.12*: &nbsp; One paper is accepted in IJCV.
-- *2025.11*: &nbsp; 获得 中国图象图形学学会自然科学二等奖，排名3/5.
 
 </div>
 
